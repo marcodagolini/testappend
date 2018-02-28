@@ -47,17 +47,21 @@
 	
 <script>
 
+for (var a = 0; a < 10; a ++){
+
   var hostcustomer = document.createElement('div');
   hostcustomer.setAttribute("class","hostcustomer");     
-  hostcustomer.setAttribute("id","header" + "1");
+  hostcustomer.setAttribute("id","header" + "a");
   var maindiv = document.getElementById('log');
   maindiv.appendChild(hostcustomer);
   
   var hostagent = document.createElement('div');
   hostagent.setAttribute("class","hostagent");     
-  hostagent.setAttribute("id","transcript" + "1");
+  hostagent.setAttribute("id","transcript" + "a");
   var maindiv = document.getElementById('log');
   maindiv.appendChild(hostagent);
+	
+}
 
 
 	
