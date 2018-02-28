@@ -11,33 +11,21 @@
 
 <style>
 
-
-.header {
-    margin-left: auto;
-    margin-right: 0px;
-    text-align: right;
-    color: black;
+	
+.hostcustomer {
     background-color: #bccad6;
-    border-radius: 10px 0px 10px 10px;
-    padding: 10px;
-    max-width: 70%;
-    font-size: 16px;
-    word-wrap: break-word;
-    display: inline-block;
+    text-align: right;
+    width: 256px;
 }
-.transcript {
-    margin-right: auto;
-    margin-left: 0px;
-    text-align: left;
-    color: black;
+    
+    
+.hostagent {
     background-color: #edf0f2;
-    border-radius: 0px 10px 10px 10px;
-    padding: 10px;
-    max-width: 70%;
-    font-size: 16px;
-    word-wrap: break-word;
-    display: inline-block;
+    text-align: left;
+    width: 256px;
 }
+
+
 #log {
     position:absolute;
     visibility:visible;
@@ -61,17 +49,17 @@
 	
 <script>
 
-  var header = document.createElement('div');
-  header.setAttribute("class","header");     
-  header.setAttribute("id","header" + "1");
+  var hostcustomer = document.createElement('div');
+  hostcustomer.setAttribute("class","hostcustomer");     
+  hostcustomer.setAttribute("id","header" + "1");
   var maindiv = document.getElementById('log');
-  maindiv.appendChild(header);
+  maindiv.appendChild(hostcustomer);
   
-  var transcript = document.createElement('div');
-  transcript.setAttribute("class","transcript");     
-  transcript.setAttribute("id","transcript" + "1");
+  var hostagent = document.createElement('div');
+  hostagent.setAttribute("class","hostagent");     
+  hostagent.setAttribute("id","transcript" + "1");
   var maindiv = document.getElementById('log');
-  maindiv.appendChild(transcript);
+  maindiv.appendChild(hostagent);
 
 
 	
