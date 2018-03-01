@@ -27,7 +27,7 @@
     background-color: #edf0f2;
     text-align: left;
     width: 256px;
-    height: 20px;
+    height: 0px;
     border: 1px solid blue;
 }
 
@@ -65,14 +65,12 @@ for (var a = 0; a < 10; a ++){
   maindiv.appendChild(hostcustomer);
   $("#header" + a).html("Conversazione " + a);
   
-  var line = document.createElement('div');
-  line.setAttribute("class","line");	
+	
   var hostagent = document.createElement('div');
   hostagent.setAttribute("class","hostagent");     
   hostagent.setAttribute("id","transcript" + a);
   var maindiv = document.getElementById('log');
   maindiv.appendChild(hostagent);
-  hostagent.appendChild(line);
   $("#transcript" + a).html("Transcript " + a);
 	
 }
