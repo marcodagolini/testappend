@@ -72,7 +72,7 @@ $( "body" ).click(function( event ) {
 		var myalert = (event.target.id).replace("header", "");
 		myalert = "transcript" + myalert;
 		// alert(myalert);
-		if($('[id^=transcript]').css("height") == "0px") {
+		if($("#" + myalert).css("height") == "0px") {
 			opencheck = 1;
 		}else{
 			opencheck = 0;
