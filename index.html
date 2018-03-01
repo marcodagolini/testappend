@@ -74,7 +74,7 @@ $( "body" ).click(function( event ) {
 		var myalert = (event.target.id).replace("header", "");
 		myalert = "transcript" + myalert;
 		// alert(myalert);
-		if($('[id^=transcript]').css("height") != "0px") {
+		if($('[id^=transcript]').css("height") == "0px") {
 			opencheck = 1;
 		}
 		$('[id^=transcript]').css({"height":"0px"});
