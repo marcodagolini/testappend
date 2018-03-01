@@ -70,11 +70,18 @@ for (var a = 0; a < 10; a ++){
 	
 $( "body" ).click(function( event ) {
 	if ((event.target.id).startsWith("header")){
+		var opencheck = 0;
 		var myalert = (event.target.id).replace("header", "");
 		myalert = "transcript" + myalert;
 		// alert(myalert);
+		if($('[id^=transcript]').css("height") != "0px") {
+			opencheck = 1;
+		}
 		$('[id^=transcript]').css({"height":"0px"});
-		$("#" + myalert).css({"height":"100px"});
+		if(opencheck){
+			$("#" + myalert).css({"height":"100px"});
+		}
+		
 	}
 });
 	
