@@ -31,6 +31,14 @@
     border: 1px solid blue;
 }
 
+.line {
+    background-color: #ffffff;
+    text-align: left;
+    width: 256px;
+    height: 10px;
+    border: 1px solid red;
+}
+
 
 #log {
     background-color: #ffffff;
@@ -57,11 +65,14 @@ for (var a = 0; a < 10; a ++){
   maindiv.appendChild(hostcustomer);
   $("#header" + a).html("Conversazione " + a);
   
+  var line = document.createElement('div');
+  line.setAttribute("class","line");	
   var hostagent = document.createElement('div');
   hostagent.setAttribute("class","hostagent");     
   hostagent.setAttribute("id","transcript" + a);
   var maindiv = document.getElementById('log');
   maindiv.appendChild(hostagent);
+  hostagent.appendChild(line);
   $("#transcript" + a).html("Transcript " + a);
 	
 }
