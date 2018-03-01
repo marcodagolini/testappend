@@ -65,7 +65,7 @@ for (var a = 0; a < 10; a ++){
 }
 	
 $(document).on('click', 'div:not(.hostcustomer)', function() {
-    alert(JSON.stringify($(this).find(".class")));
+    alert($(this).attr('class'));
 });
 	
 
