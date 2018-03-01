@@ -56,12 +56,14 @@ for (var a = 0; a < 10; a ++){
   hostcustomer.setAttribute("id","header" + a);
   var maindiv = document.getElementById('log');
   maindiv.appendChild(hostcustomer);
+  $("#header" + a).html("Conversazione " + a);
   
   var hostagent = document.createElement('div');
   hostagent.setAttribute("class","hostagent");     
   hostagent.setAttribute("id","transcript" + a);
   var maindiv = document.getElementById('log');
   maindiv.appendChild(hostagent);
+  $("#transcript" + a).html("Transcript " + a);
 	
 }
 	
