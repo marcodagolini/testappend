@@ -79,6 +79,8 @@ $( "body" ).click(function( event ) {
 		$('[id^=transcript]').css({"height":"0px"});
 		if(opencheck){
 			$("#" + myalert).css({"height":"100px"});
+		}else{
+			opencheck = 0;
 		}
 		
 	}
