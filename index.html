@@ -68,7 +68,10 @@ $( "body" ).click(function( event ) {
 	if ((event.target.id).startsWith("header")){
 		var myalert = (event.target.id).replace("header", "");
 		myalert = "transcript" + myalert;
-		alert(myalert);
+		// alert(myalert);
+		div[id^='transcript'], div[id*='transcript']{
+    			height: 0px;
+		};
 		$("#" + myalert).css({"height":"100px"});
 	}
 });
