@@ -76,12 +76,12 @@ $( "body" ).click(function( event ) {
 		// alert(myalert);
 		if($('[id^=transcript]').css("height") == "0px") {
 			opencheck = 1;
+		}else{
+			opencheck = 0;
 		}
 		$('[id^=transcript]').css({"height":"0px"});
 		if(opencheck){
 			$("#" + myalert).css({"height":"100px"});
-		}else{
-			opencheck = 0;
 		}
 		
 	}
