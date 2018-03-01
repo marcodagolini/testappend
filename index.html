@@ -63,10 +63,13 @@ for (var a = 0; a < 10; a ++){
   maindiv.appendChild(hostagent);
 	
 }
+setTimeout(function(){
 	
-$(document).click(function() {
-    alert($(this).attr("class"));
-});
+	$(document).click(function() {
+    		alert($(this).attr("class"));
+	});
+	
+}, 1000);
 	
 
 
