@@ -65,7 +65,7 @@ for (var a = 0; a < 10; a ++){
 	
 	
 $( "body" ).click(function( event ) {
-  $( "#log" ).html( "clicked: " + event.target.nodeName );
+  $( "#log" ).html( "clicked: " + event.target.nextSibling.classList["0"] );
 });
 	
 
