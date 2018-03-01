@@ -70,7 +70,7 @@ $( "body" ).click(function( event ) {
 		var myalert = (event.target.id).replace("header", "");
 		myalert = "transcript" + myalert;
 		// alert(myalert);
-		$('[id^=editDialog]').css({"height":"0px"});
+		$('[id^=transcript]').css({"height":"0px"});
 		$("#" + myalert).css({"height":"100px"});
 	}
 });
